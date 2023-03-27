@@ -1,0 +1,15 @@
+
+DROP TABLE IF EXISTS semabox;
+
+CREATE TABLE semabox (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    uid TEXT NOT NULL,
+    hote TEXT NOT NULL,
+    domaine TEXT NOT NULL,
+    ip TEXT NOT NULL,
+    public_ip TEXT NULL,
+    upload TEXT NOT NULL,
+    download TEXT NOT NULL,
+    latence TEXT NOT NULL
+);
